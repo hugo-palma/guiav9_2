@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="ratchet/dist/css/ratchet.min.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="app.js"></script>
+    <script src="ratchet/dist/js/ratchet.min.js"></script>
+
+    <header class="bar bar-nav">
+        <h1 class="title">Game Shop</h1>
+    </header>
+    <div class="content">
+        <h4>C&aacute;talogo</h4>
+        <a href="#mymodal1" class="btn fill-parent" id="btnVer">Ver Juegos</a><br>
+        <div id="mymodal1" class="modal">
+            <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#mymodal1"></a>
+                <h1 class="title">C&aacute;talogo</h1>
+            </header>
+            <div class="content" id="resultado1">
+                
+            <a href="#" class="btn" id="btnMas">M&aacute;s</a><br>
+            </div>
+        </div><br>
+        <div id="mymodal2" class="modal">
+            <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#mymodal2"></a>
+                <h1 class="title">Detalles</h1>
+            </header>
+            <div class="content" id="resultado2">
+            </div>
+        </div>
+        <a href="#mymodal3" class="btn fill-parent" id="">Contactanos</a><br>
+        <div id="mymodal3" class="modal">
+            <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#mymodal3"></a>
+                <h1 class="title">Contactanos</h1>
+            </header>
+            <div class="content" id="resultado3">
+                <h2>Telefono:</h2>
+                <a class="ui-btn ui-icon-phone ui-btn-icon-left">(503) 2257-7777</a>
+                <h2>Correo Electronico:</h2>
+                <a class="ui-btn ui-icon-mail ui-btn-icon-left">gameshop@mail.com</a>
+            </div>
+        </div><br>
+        <a href="#mymodal4" class="btn fill-parent" id="">Iniciar Sesi&oacute;n</a><br>
+        <div id="mymodal4" class="modal">
+            <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#mymodal4"></a>
+                <h1 class="title">Iniciar Sesi&oacute;n</h1>
+            </header>
+            <div class="content" id="resultado4">
+                <h3>Usuario:</h3>
+                <input name="usuario" id="usuario"></input>
+                <h3>Contrase&ntilde;a:</h3>
+                <input name="pass" id="pass"></input></br>
+                <a href="#page1" id="btnIngresar" onclick="validar(document.getElementById('usuario').value, document.getElementById('pass').value)"  class="btn">Ingresar</a>
+                <a href="#page1" id="btnCancelar"  class="btn">Regresar</a>
+            </div>
+        </div><br>
+    </div>
+</body>
+
+</html>
